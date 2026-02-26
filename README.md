@@ -1,10 +1,10 @@
-# 🔐 Classical Cryptography Suite
+# Classical Cryptography System
 
 A modular encryption and decryption system built in **C++** implementing 6 classical ciphers with a **role-based user management system** and **file persistence**. Built around an abstract base class using core OOP principles — each cipher is independently encapsulated, polymorphic, and fully testable.
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -27,13 +27,13 @@ This project was built to demonstrate how classical cryptographic algorithms can
 
 ## Features
 
-- 🔒 6 classical ciphers with full encrypt and decrypt support
-- 👤 Role-based user system (Admin, Encryptor, Decryptor, Reader)
-- 💾 File persistence — cipher records and user data saved and loaded automatically
-- 🔑 Password-based cipher record lookup and management
-- 📐 Dynamic array with auto-resize (initial capacity 150, grows by 50)
-- 🎲 Random key generation for Caesar and Monoalphabetic ciphers
-- 🧮 Full matrix math for Hill cipher including modular inverse and determinant calculation
+- 6 classical ciphers with full encrypt and decrypt support
+- Role-based user system (Admin, Encryptor, Decryptor, Reader)
+- File persistence — cipher records and user data saved and loaded automatically
+- Password-based cipher record lookup and management
+- Dynamic array with auto-resize (initial capacity 150, grows by 50)
+- Random key generation for Caesar and Monoalphabetic ciphers
+- Full matrix math for Hill cipher including modular inverse and determinant calculation
 
 ---
 
@@ -95,7 +95,7 @@ Input length must be a multiple of the matrix size
 ## Project Structure
 
 ```
-CryptographySuite/
+Cryptography_System/
 │
 ├── Cipher.h / Cipher.cpp                  # Base class — shared data & interface
 │
@@ -190,7 +190,7 @@ Users are stored with a username, credentials (password), and assigned role. The
 ### Compile with g++
 
 ```bash
-g++ -o CryptographySuite Source.cpp Cipher.cpp \
+g++ -o Cryptography_System Source.cpp Cipher.cpp \
     CaesarCipher.cpp AtbashCipher.cpp MonoalphabeticCipher.cpp \
     PlayfairCipher.cpp VigenereCipher.cpp HillCipher.cpp User.cpp \
     -std=c++11 -lm
@@ -199,7 +199,7 @@ g++ -o CryptographySuite Source.cpp Cipher.cpp \
 ### Run
 
 ```bash
-./CryptographySuite
+./Cryptography_System
 ```
 
 ### Visual Studio
